@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
+  <header style="position: sticky; top: 0; z-index: 1000;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3" style="position: sticky;">
       <div class="container">
         <a class="navbar-brand fw-bold fs-3 text-warning" href="#home">Sashwath Prakash</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,15 @@
           <h1 class="display-4 fw-bold mb-2">Hello there, I'm <span class="highlight">Sashwath Prakash</span>.</h1>
           <h2 class="fs-3 mb-3">I'm a Full Stack Developer and UI/UX Designer</h2>
           <p class="lead mb-4">I'm a 20-year-old aspiring technologist with a strong foundation in frontend development, backend systems, UI/UX designs, and AI solutions. I combine creativity with technical expertise to build impactful digital experiences.</p>
-          <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://github.com/sash-firedrag" target="_blank" class="d-inline-block" title="GitHub">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" style="width:38px;height:38px;">
+            </a>
+            <a href="https://www.linkedin.com/in/sashwath-prakash-a44a1232b/" target="_blank" class="d-inline-block" title="LinkedIn">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" style="width:38px;height:38px;">
+            </a>
+          </div>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
             <a href="#contact" class="btn btn-warning btn-lg px-4">Contact</a>
             <a href="#resume.pdf" class="btn btn-outline-light btn-lg px-4" download>Download Resume</a>
           </div>
@@ -48,6 +56,7 @@
         </div>
       </div>
     </div>
+    
   </section>
 
   <section class="about py-5" id="about">
@@ -305,7 +314,7 @@
   <footer class="bg-dark text-light py-3 mt-5 border-top border-warning">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="d-flex align-items-center gap-2 mb-2 mb-md-0">
-        <button onclick="window.location.href='#home'" class="btn btn-warning btn-sm me-2" title="Back to Top" style="border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn btn-warning btn-sm me-2" title="Back to Top" style="border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"></button>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#212529" class="bi bi-arrow-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V4.707l3.147 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 4.707V11.5A.5.5 0 0 0 8 12z"/>
           </svg>
@@ -314,10 +323,10 @@
       </div>
       <div class="d-flex align-items-center gap-2">
         <a href="https://github.com/sash-firedrag" target="_blank" class="d-inline-block" title="GitHub">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" style="width:28px;height:28px;">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" style="width:30px;height:30px;">
         </a>
         <a href="https://www.linkedin.com/in/sashwath-prakash-a44a1232b/" target="_blank" class="d-inline-block" title="LinkedIn">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" style="width:28px;height:28px;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" style="width:30px;height:30px;">
         </a>
       </div>
     </div>
