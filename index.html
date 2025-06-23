@@ -10,15 +10,15 @@
   <link rel="icon" type="image/png" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
 </head>
 <body>
-  <header style="position: sticky; top: 0; z-index: 1000;">
+  <header style="position: sticky; top: 0; z-index: 100;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3" style="position: sticky;">
-      <div class="container">
-        <a class="navbar-brand fw-bold fs-3 text-warning" href="#home">Sashwath Prakash</a>
+      <div class="container align-items-stretch" style="height: 50px; min-height: 50px;">
+        <a class="navbar-brand fw-bold fs-3 text-warning d-flex align-items-center h-100" href="#home" style="height: 100%;">Sashwath Prakash</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse h-100" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center h-100" style="height: 100%;">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -40,7 +40,7 @@
           <p class="lead mb-4">I'm a 20-year-old aspiring technologist with a strong foundation in frontend development, backend systems, UI/UX designs, and AI solutions. I combine creativity with technical expertise to build impactful digital experiences.</p>
           <div class="d-flex align-items-center gap-2">
             <a href="https://github.com/sash-firedrag" target="_blank" class="d-inline-block" title="GitHub">
-              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" style="width:38px;height:38px;">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" style="width:40px;height:40px;">
             </a>
             <a href="https://www.linkedin.com/in/sashwath-prakash-a44a1232b/" target="_blank" class="d-inline-block" title="LinkedIn">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" style="width:38px;height:38px;">
@@ -59,7 +59,7 @@
     
   </section>
 
-  <section class="about py-5" id="about">
+  <section class="about py-5" id="about" height="120vh">
     <div class="container">
       <h2 class="text-center text-warning mb-4">About Me</h2>
       <div class="row g-4 align-items-center">
@@ -96,7 +96,7 @@
     </div>
   </section>
 
-  <section class="skills py-5 bg-light" id="skills">
+  <section class="skills py-5 bg-light" id="skills" height="100vh">
     <div class="container">
       <h2 class="text-center text-warning mb-3">My Tech Stack</h2>
       <p class="skills-subtext text-center mb-5">Here are the technologies I work with to build secure, scalable, and efficient applications.</p>
@@ -153,7 +153,7 @@
     </div>
   </section>
 
-  <section class="projects py-5" id="projects">
+  <section class="projects py-5" id="projects" height="100vh">
     <div class="container">
       <h2 class="text-center text-warning mb-3">Featured Projects</h2>
       <p class="projects-subtext text-center mb-5">Here are some of the projects I've worked on that showcase my skills in building secure, scalable, and intelligent web applications.</p>
@@ -207,7 +207,7 @@
     </div>
   </section>
 
-  <section class="experience py-5 bg-light" id="experience">
+  <section class="experience py-5 bg-light" id="experience" paddding="20px">
     <div class="container">
       <h2 class="text-center text-warning mb-3">Experience &amp; Achievements</h2>
       <p class="subtext text-center mb-5">My journey in tech includes education, project building, competitions, and continuous learning.</p>
@@ -314,11 +314,6 @@
   <footer class="bg-dark text-light py-3 mt-5 border-top border-warning">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="d-flex align-items-center gap-2 mb-2 mb-md-0">
-        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn btn-warning btn-sm me-2" title="Back to Top" style="border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"></button>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#212529" class="bi bi-arrow-up" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V4.707l3.147 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 4.707V11.5A.5.5 0 0 0 8 12z"/>
-          </svg>
-        </button>
         <span class="w-100 text-center">&copy; 2024 Sashwath Prakash. All rights reserved.</span>
       </div>
       <div class="d-flex align-items-center gap-2">
@@ -330,6 +325,26 @@
         </a>
       </div>
     </div>
-  </footer>
+</footer>
+<!-- Floating Action Button -->
+
+<button type="button" class="fab-scroll-top" id="fabScrollTop" title="Back to Top" aria-label="Scroll to Top">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="#212529" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V4.707l3.147 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 4.707V11.5A.5.5 0 0 0 8 12z"/>
+  </svg>
+</button>
+<script>
+  document.getElementById('fabScrollTop').onclick = function() {
+    // Scroll to the top of the page smoothly
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+  // Optional: Hide FAB when near top
+  window.addEventListener('scroll', function() {
+    document.getElementById('fabScrollTop').style.display =
+      window.scrollY > 200 ? 'flex' : 'none';
+  });
+  // Initially hide if at top
+  if(window.scrollY < 200) document.getElementById('fabScrollTop').style.display = 'none';
+</script>
 </body>
 </html>
